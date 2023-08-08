@@ -1,2 +1,2 @@
 # maori_Gods
-This is a demo
+Maori God Website
