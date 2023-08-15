@@ -40,15 +40,15 @@ main {
 
 .h2centered {
   
-    font-size: 4rem; /* Sets the font size of the .largeheading element to 2rem */
+    font-size: 3rem; /* Sets the font size of the .largeheading element to 2rem */
   color: black; /* Sets the text color of the .largeheading element to dodgerblue */
   font-weight: bold; /* Sets the font weight of the .largeheading element to bold */
    align-items: center; /* Aligns the items in the .largeheading element to the center */
   text-align: center;  /*Aligns the text of the .largeheading element to the center */
 }
 
-p {
-    text-align: justify;
+
+
 }
 
 .ppadding {
@@ -81,7 +81,9 @@ img {
     height: auto;
 }
 
-
+.justy { 
+    text-align: justify;
+}
 
 
     
