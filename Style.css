@@ -1,14 +1,30 @@
+
+
+body {
+    margin: 0;
+    background-color: #9ACD32;
+    font-family: sans-serif, serif;
+}
+
 header {
-  font-family: sans-serif;
-    background-color: #333; /* sets the background color of the header to dark grey */
+  background-color: #333; /* sets the background color of the header to dark grey */
   color: #fff; /* sets the font color to white */
   padding: 20px; /* adds 20 pixels of padding around the header content */
   display: flex; /* sets the header to use flexbox layout */
   justify-content: space-between; /* horizontally aligns the content of the header */
   align-items: center;  /*vertically aligns the content of the header */
+  font-size: 20px;
+}
+.logo {
+    margin-left: 1rem; /* adds 1 rem of margin to the left of the logo image */
+    height: 6rem; /* sets the height of the logo image to 3 rem */
+    border-radius: 50%;
 }
 
-
+.Title {
+    font-size: 3em;
+}
+    
 nav ul {
   list-style: none; /* removes bullet points from the list */
   margin: 0; /* sets margin of the list to 0 */
@@ -16,15 +32,67 @@ nav ul {
   display: flex; /* sets the list to use flexbox layout */
 }
 
-
 nav li {
   margin: 0 10px; /* adds margin to the left and right of the list items */
+} 
+
+nav a:hover {
+    background-color: grey; /* this sets the nav bar menu words to have a backround colour when hovering */
 }
 
 /* This styles the links in the navigation */
 nav a {
   color: #fff; /* sets the font color of the links to white #fff*/
   text-decoration:  none; /* removes underline from the links */
+}
+
+/* Style the dropdown container */
+.dropdown {
+  position: relative; /* Keep the dropdown content relative to the container */
+  display: inline-block; /* Display the dropdown as an inline element */
+  
+}
+
+/* Style the dropdown button */
+.dropbtn {
+  background-color: #333; /* Background color of the button */
+  color: white; /* Text color of the button */
+  border: none; /* Remove border */
+  cursor: pointer; /* Display pointer cursor on hover */
+  cursor: pointer; /* Display pointer cursor on hover */
+  cursor: pointer; /* Display pointer cursor on hover */
+  font-size: 20px;
+  }
+
+.dropbtn:hover {
+    background-color: grey; /*This sets the backround colour wehn hovering "The Gods" dropdown menu */
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none; /* Hide the dropdown content by default */
+  position: absolute; /* Position the dropdown content absolutely */
+  background-color: #333; /* Background color of the dropdown content */
+  min-width: 160px; /* Set a minimum width for the dropdown */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Add a shadow for the dropdown content */
+}
+
+/* Style the dropdown links */
+.dropdown-content a {
+  color: white; /* Text color of the dropdown links */
+  padding: 12px 16px; /* Add padding to the dropdown links */
+  text-decoration: none; /* Remove text underline */
+  display: block; /* Display the links as block elements */
+}
+
+/* Change color on hover */
+.dropdown-content a:hover {
+  background-color: grey; /* Change background colour when hovering over links */
+}
+
+/* Show the dropdown content when the button is hovered */
+.dropdown:hover .dropdown-content {
+  display: block; /* Display the dropdown content when the button is hovered */
 }
 
 main {
@@ -34,13 +102,14 @@ main {
 }
 
 #overview {
-    font-family: sans-serif, serif; /*sets the fonts for the content */
     text-align: justify; /*aligns the text to justify */
+    margin: 10px auto;/* Centers the main content within its parent element using margin auto */
+    
 }
 
-.h2centered {
+.h1centered {
   
-    font-size: 3rem; /* Sets the font size of the .largeheading element to 2rem */
+    font-size: 3.5rem; /* Sets the font size of the .largeheading element to 2rem */
   color: black; /* Sets the text color of the .largeheading element to dodgerblue */
   font-weight: bold; /* Sets the font weight of the .largeheading element to bold */
    align-items: center; /* Aligns the items in the .largeheading element to the center */
@@ -48,21 +117,14 @@ main {
 }
 
 
-
-}
-
 .ppadding {
     padding-bottom: 10px;
 }
 
-    
-}
-    
 .table-container {
     max-width: 1000pxpx; /* Limit the maximum width of the container */
     margin: 0 auto;/* Center the container horizontally */
     padding: 20px;
-
 }
 
 table {
@@ -71,23 +133,269 @@ table {
 }
 
 td {
-    border: 1px solid #ccc; /* Add a 1px solid border with light gray color */
     padding: 10x; /* Add padding inside each cell to create some space around the content */
     text-align: center;
 }
 
-img {
-    max-width: 200px;
-    height: auto;
+table img {
+    width: 250px;
+    height: 320px;
+    border-radius: 5%;
+    padding: 5px;
 }
 
-.justy { 
+.justify { 
     text-align: justify;
 }
 
+.box {
+  display: flex; /* sets the point element to use flexbox layout */
+  align-items: center; /* vertically aligns the content of the element */
+  margin-bottom: 40px; /* adds 20 pixels of margin to the bottom of the element */
+}
 
+/* This sets the style for the point img element */
+.box img {
+  width: 180px; /* sets the width of the image */
+  height: 200px; /* sets the height of the image */
+  margin-right: 10px; /* adds 10 pixels of margin to the right of the image */
+}
+
+.padding-right {
+    padding-right: 20px;
+}
+ 
+.box1 {
+  display: flex; /* sets the point element to use flexbox layout */
+  align-items: center; /* vertically aligns the content of the element */
+  margin-bottom: 40px; /* adds 20 pixels of margin to the bottom of the element */
+}
+
+.box1 img {
+  width 250px /* sets the width of the image */ 
+  height: 250px; /* sets the height of the image */
+  padding-right: 20px
+}
+
+.band-name {
+    text-align: center;
+    margin: 0;
+    font-size: 4em;
+    font-family: "Booter - Zero Zero";
+    font-weight: normal;
+    color: white;
+}  
+.band-name-large {
+    font-size: 7em;
+} 
+
+.content-section {
+    margin: 1em;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+.section-header {
+    font-family: "Metal Mainia";
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.shop-item-image {
+  /*  float: left; */
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+    border-radius: 5%;
+}
+
+.shop-item {
+    margin: 30px;
+}
+
+.shop-item-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.shop-item-details {
+    display: flex;
+    align-items: center;
+    padding: 5px;
     
+}
+
+.shop-item-price {
+    flex-grow: 1;
+    color: #333;
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+.shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em;
+    cursor: pointer;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #e40078;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
     
+}
+
+.btn-primary:hover {
+    background-color: #2D9CDB;
+}
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color:  #333;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color:  #333;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color:  #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    color: white;
+    background-color:  red;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color:  #CC4C4C;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid  #56CCF2;
+    background-color:  #eee;
+    color:  #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+    
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color:  #333;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+}
+
+.main-footer {
+    background-color: #56CCF2;
+    color: white;
+    padding: .25em 0;
+    
+}
+
+.main-footer-container {
+    display: flex;
+    align-items: center;
+}
+
+.main-footer-container {
+    flex-grow: 1;
+    text-align: end;
+}
+
+centeredimg {
+    width: 500px;
+    height: auto;
+    padding: 20px;
+}
+
 footer {
     background-color: #333; 
     color: #fff; 
@@ -112,4 +420,5 @@ footer {
 .social-media li img {
     width: 50px;
     height: 50px;
+    border-radius: 20%;
 }
